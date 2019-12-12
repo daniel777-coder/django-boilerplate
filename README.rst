@@ -29,5 +29,6 @@ TODO
 - Add custom error pages
 - Handle fixtures (json and CSV)
 - Add change-language view
-- Add simulated 500 error view
-
+- Add simulated 500 error view for superusers
+- Add GitHub mirror
+- Add Pylint
