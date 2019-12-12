@@ -1,0 +1,12 @@
+django
+django-db-geventpool
+django-debug-toolbar
+django-environ
+django-hijack
+django-htmlmin
+django-parler
+gevent
+isort
+pillow
+psycopg2-binary
+whitenoise
