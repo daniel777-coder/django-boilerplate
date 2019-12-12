@@ -130,3 +130,4 @@ dmypy.json
 
 # Project
 project/settings/custom.py
+.live/
