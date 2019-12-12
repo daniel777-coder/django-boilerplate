@@ -1,4 +1,4 @@
-django
+django==2.2.8
 django-db-geventpool
 django-debug-toolbar
 django-environ
@@ -9,4 +9,5 @@ gevent
 isort
 pillow
 psycopg2-binary
+python-memcached
 whitenoise
