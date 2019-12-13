@@ -27,5 +27,4 @@ TODO
 - Setup testing tools
 - Handle CSV fixtures
 - Add change-language view
-- Add GitHub mirror
 - Add Pylint
