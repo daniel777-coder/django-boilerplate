@@ -35,10 +35,12 @@ Installing
 
 The site will be available on <http://localhost:8000> or <http://127.0.0.1:8000>.
 
+You can create a custom settings in `project/settings/custom.py`. Set DJANGO_SETTINGS_MODULE to your settings file and import all from `project/settings/common.py`.
+
 Deploy
 ======
 
-TODO
+(put your deploy instructions here)
 
 Translations
 ============
