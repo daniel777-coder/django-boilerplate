@@ -25,7 +25,7 @@ TODO
 ====
 
 - Setup testing tools
-- Handle fixtures
+- Handle CSV fixtures
 - Add change-language view
 - Add GitHub mirror
 - Add Pylint
