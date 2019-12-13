@@ -7,9 +7,15 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import include, path
 from django.views.i18n import JavaScriptCatalog
 
+from common.views import (
+    bad_request, page_not_found, permission_denied, server_error,
+    simulated_error,
+)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('jsi18n/', JavaScriptCatalog.as_view(), name='javascript-catalog'),
+    path('simulated-error/', simulated_error),
     path('hijack/', include('hijack.urls')),
 ]
 
@@ -18,6 +24,10 @@ if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += [
         path('__debug__/', include(debug_toolbar.urls)),
+        path('error400/', bad_request),
+        path('error403/', permission_denied),
+        path('error404/', page_not_found),
+        path('error500/', server_error),
     ]
 
 admin.site.site_header = settings.PROJECT_DISPLAY_NAME

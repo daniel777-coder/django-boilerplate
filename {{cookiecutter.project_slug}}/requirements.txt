@@ -5,6 +5,7 @@ django-environ
 django-hijack
 django-htmlmin
 django-parler
+django-sekizai
 gevent
 isort
 pillow
