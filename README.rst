@@ -25,10 +25,7 @@ TODO
 ====
 
 - Setup testing tools
-- Add base template
-- Add custom error pages
-- Handle fixtures (json and CSV)
+- Handle fixtures
 - Add change-language view
-- Add simulated 500 error view for superusers
 - Add GitHub mirror
 - Add Pylint
