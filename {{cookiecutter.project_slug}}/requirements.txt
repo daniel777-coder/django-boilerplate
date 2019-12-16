@@ -10,5 +10,6 @@ gevent
 isort
 pillow
 psycopg2-binary
+pytest-django
 python-memcached
 whitenoise

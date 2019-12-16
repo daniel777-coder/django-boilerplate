@@ -103,6 +103,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'sekizai.context_processors.sekizai',
             ],
+            'debug': DEBUG,
         },
     },
 ]
