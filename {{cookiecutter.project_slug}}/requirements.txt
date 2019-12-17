@@ -6,10 +6,14 @@ django-hijack
 django-htmlmin
 django-parler
 django-sekizai
+factory_boy
 gevent
 isort
 pillow
 psycopg2-binary
+pytest-cov
 pytest-django
 python-memcached
+snapshottest
+splinter[django]
 whitenoise
