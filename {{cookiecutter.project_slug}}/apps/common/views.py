@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import redirect, render
+from django.utils import translation
+from django.views.decorators.http import require_POST
 
 from .decorators import superuser_login_required
 
@@ -22,3 +25,18 @@ def server_error(request):
 @superuser_login_required
 def simulated_error(request):
     raise Exception('Simulated error')
+
+
+@require_POST
+def change_language(request):
+    user_language = request.POST.get('language')
+    redirect_to = request.POST.get('redirect_to', None)
+    translation.activate(user_language)
+
+    if redirect_to:
+        response = redirect(redirect_to)
+    else:
+        response = HttpResponse(status=204)
+
+    response.set_cookie('language_code', user_language)
+    return response

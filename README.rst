@@ -24,10 +24,3 @@ Generate the project:
 .. code-block:: bash
 
   $ cookiecutter gl:daniel777/django-simple-boilerplate
-
-TODO
-====
-
-- Handle CSV fixtures
-- Add change-language view
-- Add Pylint
