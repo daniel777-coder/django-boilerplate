@@ -32,7 +32,7 @@ if settings.DEBUG:
 
 admin.site.site_header = settings.PROJECT_DISPLAY_NAME
 
-handler400 = 'main.views.bad_request'
-handler403 = 'main.views.permission_denied'
-handler404 = 'main.views.page_not_found'
-handler500 = 'main.views.server_error'
+handler400 = 'common.views.bad_request'
+handler403 = 'common.views.permission_denied'
+handler404 = 'common.views.page_not_found'
+handler500 = 'common.views.server_error'
