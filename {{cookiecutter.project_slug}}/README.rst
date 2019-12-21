@@ -43,7 +43,7 @@ Set DJANGO_SETTINGS_MODULE to your settings file and import all from
 Deploy
 ======
 
-(put your deploy instructions here)
+Put your deploy instructions here, otherwise, pass instructions to the administrator.
 
 Translations
 ============
