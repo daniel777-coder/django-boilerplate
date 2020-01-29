@@ -113,7 +113,12 @@ ALLOWABLE_TEMPLATE_SETTINGS = ('DEBUG', 'LOAD_EXTERNAL_REFS', 'PROJECT_DISPLAY_N
 HTML_MINIFY = not DEBUG
 
 DEBUG_TOOLBAR_CONFIG = {
-    'SHOW_TOOLBAR_CALLBACK': lambda req: DEBUG and env('SHOW_DEBUG_TOOLBAR'),
+    'SHOW_TOOLBAR_CALLBACK': lambda req: (
+        req.environ.get('SERVER_NAME', None) != 'testserver' and
+        req.META.get('REMOTE_ADDR', None) in INTERNAL_IPS and
+        DEBUG and
+        env('SHOW_DEBUG_TOOLBAR')
+    ),
 }
 
 
