@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'hijack',
     'compat',
 
+    'corsheaders',
     'parler',
     'sekizai',
 
@@ -69,6 +70,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -268,6 +270,8 @@ FIXTURE_DIRS = [
 
 ROOT_URLCONF = 'project.urls'
 WSGI_APPLICATION = 'project.wsgi.application'
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ADMINS = []
 admins = env('ADMINS')

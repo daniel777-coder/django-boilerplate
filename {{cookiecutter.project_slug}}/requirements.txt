@@ -1,4 +1,5 @@
 django==2.2.8
+django-cors-headers
 django-db-geventpool
 django-debug-toolbar
 django-environ
