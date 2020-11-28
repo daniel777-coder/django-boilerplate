@@ -1,4 +1,4 @@
-from project import urls
+from core import urls
 
 from ..views import bad_request, page_not_found, permission_denied, server_error
 
