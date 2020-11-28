@@ -257,10 +257,14 @@ HIJACK_ALLOW_GET_REQUESTS = True
 # Fixtures
 # =============================================================================
 
-# Usage: python manage.py pushfixtures
-# See apps/common/management/commands/pushfixtures.py
 FIXTURE_DIRS = [
     base_dir('fixtures'),
+]
+
+
+# See apps/common/management/commands/pushfixtures.py
+FIXTURES = [
+#    'file.json',
 ]
 
 
@@ -268,8 +272,8 @@ FIXTURE_DIRS = [
 # Others
 # =============================================================================
 
-ROOT_URLCONF = 'project.urls'
-WSGI_APPLICATION = 'project.wsgi.application'
+ROOT_URLCONF = 'core.urls'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
