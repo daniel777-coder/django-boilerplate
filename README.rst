@@ -1,6 +1,6 @@
-*************************
-Django Simple Boilerplate
-*************************
+******************
+Django Boilerplate
+******************
 
 Personal boilerplate for Django projects.
 
@@ -8,7 +8,7 @@ This boilerplate was designed to be as simple as possible, giving you the freedo
 
 We use postgres and pytest because they are quite standardized in the community. It is not too dificult to switch to other tools anyway.
 
-As a side note, this project lives on <https://gitlab.com/daniel777/django-simple-boilerplate> and it's mirrored to `GitHub <https://github.com/daniel777-coder/django-simple-boilerplate>`_.
+As a side note, this project lives on <https://gitlab.com/daniel777/django-boilerplate> and it's mirrored to `GitHub <https://github.com/daniel777-coder/django-boilerplate>`_.
 
 Usage
 =====
@@ -23,4 +23,4 @@ Generate the project:
 
 .. code-block:: bash
 
-  $ cookiecutter gl:daniel777/django-simple-boilerplate
+  $ cookiecutter gl:daniel777/django-boilerplate

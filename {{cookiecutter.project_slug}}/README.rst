@@ -101,4 +101,4 @@ Coverage
 - We recommend use `snapshottest <https://github.com/syrusakbary/snapshottest>`_ for complex outputs
 - We do not use sqlite because the results may vary between different engines
 
-This project was created with `Django Simple Boilerplate <https://gitlab.com/daniel777/django-simple-boilerplate>`_.
+This project was created with `Django Boilerplate <https://gitlab.com/daniel777/django-boilerplate>`_.
