@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # Project
-project/settings/custom.py
+core/settings/custom.py
 .live/

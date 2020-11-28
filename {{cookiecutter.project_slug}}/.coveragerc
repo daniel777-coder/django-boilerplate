@@ -1,5 +1,5 @@
 [run]
 omit =
-    project/*
+    core/*
     manage.py
     */migrations/*
